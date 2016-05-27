@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{.Site.LanguageCode}}">
+<head>
+  {{partial "meta_includes.html" .}}
+  <title>
+    404 Not Found - {{.Site.Title}}
+  </title>
+  {{partial "head_includes.html" .}}
+</head>
+<body class="nav-closed">
+  {{partial "navigation.html" .}}
+
+  <div class="site-wrapper">
+    {{partial "banner.html" .}}
+
+    <main id="content" class="content" role="main">
+
+      <article class="post">
+        <h1>Nope, that page doesn't exist</h1>
+        <p>
+          You may have mis-typed the URL, please give it another shot. Or, you
+          might have better luck heading back to the <a href="/">homepage</a>.
+        </p>
+      </article>
+
+{{partial "footer.html" .}}
