@@ -1,0 +1,16 @@
+---
+  box: debian
+  build:
+    steps:
+      - arjen/hugo-build@1.9.2:
+          version: "0.15"
+          theme: hasper
+          flags: --buildDrafts=true
+  deploy:
+    steps:
+      - install-packages:
+          packages: git ssh-client
+      - lukevivier/gh-pages@0.2.1:
+          token: $GIT_TOKEN
+          basedir: public
+          repo: 3DSIM/3dsim.github.io
