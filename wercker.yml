@@ -13,4 +13,4 @@
       - lukevivier/gh-pages@0.2.1:
           token: $GIT_TOKEN
           basedir: public
-          repo: 3DSIM/3dsim.github.io
+          repo: 3DSIM/3DSIM.github.io
