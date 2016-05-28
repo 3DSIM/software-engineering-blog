@@ -1,0 +1,53 @@
+baseurl = "http://3dsim.github.io/"
+languageCode = "en-us"
+title = "3DSIM Engineering"
+paginate = 5
+disqusshortname = "3dsimengineeringblog"
+copyright = "All rights reserved - 2016"
+canonifyurls = true
+
+
+pluralizelisttitles = false
+theme = "hasper"
+
+[[menu.main]]
+identifier = "blog"
+name = "Engineering Blog"
+url = "/"
+weight = -120
+[[menu.main]]
+name = "Main Company Site"
+url = "http://3dsim.com"
+weight = 100
+[[menu.main]]
+name = "Contact us"
+url = "mailto:support@3dsim.com"
+weight = 109
+
+[params]
+cover = "/images/cover_small.jpg"
+description = "Changing the simulation world from a little ski town."
+githubName = "3DSIM"
+googleAnalyticsUserID = ""
+hideHUGOSupport = false
+logo = "/images/3DSIMLogoOnly.png"
+twitterName = "ryanwalls"
+highlightjsTheme = "tomorrow-night-eighties"
+[params.sharing]
+twitter = true
+facebook = true
+google-plus = true
+
+[author.ryanwalls]
+name = "Ryan Walls"
+bio = "Software Engineering Manager at 3DSIM"
+location = "Park City, UT"
+website = "https://twitter.com/ryanwalls"
+
+[permalinks]
+post = "/:slug/"
+
+[sitemap]
+ChangeFreq = ""
+Filename = "sitemap.xml"
+Priority = "-1"

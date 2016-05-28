@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{.Site.LanguageCode}}">
+<head>
+  {{ partial "meta_includes.html" . }}
+  <title>
+    {{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}
+  </title>
+  {{ partial "head_includes.html" . }}
+</head>
+<body class="nav-closed">
+
+  {{ partial "navigation.html" . }}
+
+ <div class="site-wrapper">
+
+{{ $baseurl := .Site.BaseURL }}
+{{$author := index .Site.Author (or .Params.author .Site.Params.author)}}
+    {{ partial "banner.html" . }}
+
+<main class="content" role="main">
+
+  <article class="post {{ .Section }}">
+
+    <header class="post-header">
+        <h1 class="post-title">{{.Title}}</h1>
+        <small>{{.Description}}</small>
+
+        {{partial "post_meta.html" .}}
+    </header>
+
+    <section class="post-content">
+      {{ .Content }}
+    </section>
+
+
+  <footer class="post-footer">
+
+    {{if $author.thumbnail}}
+    <figure class="author-image">
+        <a class="img" href="{{.Site.BaseURL}}" style="background-image: url({{$author.thumbnail}})"><span class="hidden">{{.Site.Params.author}}'s Picture</span></a>
+    </figure>
+    {{else if .Site.Params.logo}}
+    <figure class="author-image">
+      <a class="img" href="{{.Site.BaseURL}}" style="background-image: url({{.Site.Params.logo}})"><span class="hidden">{{.Site.Params.author}}'s Picture</span></a>
+    </figure>
+    {{end}}
+
+    {{ partial "author.html" . }}
+    {{ partial "share.html" . }}
+    {{ partial "disqus.html" . }}
+
+  </footer>
+</article>
+
+</main>
+{{ partial "footer.html" . }}
