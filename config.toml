@@ -43,6 +43,7 @@ name = "Ryan Walls"
 bio = "Software Engineering Manager at 3DSIM"
 location = "Park City, UT"
 website = "https://twitter.com/ryanwalls"
+thumbnail = "https://s.gravatar.com/avatar/c9079ca00a3b670571d25f2e23023d0e?s=80"
 
 [permalinks]
 post = "/:slug/"
