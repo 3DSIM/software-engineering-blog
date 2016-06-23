@@ -99,3 +99,5 @@ Overall, entertaining talk without a lot of "new" content.
 
 ## Summary
 Good first day.  Highlight for me is Docker 1.12 orchestration features... will be using those in our pipelines as soon as they become available.  
+
+See my day 2 notes here: [DockerCon 2016 Highlights Day 2]({{< relref "post/DockerCon-2016-Highlights-Day-2.md" >}})
