@@ -5,7 +5,7 @@
       - arjen/hugo-build@1.9.2:
           version: "0.15"
           theme: hasper
-          flags: --buildDrafts=true
+          flags: --buildDrafts=false
   deploy:
     steps:
       - install-packages:
