@@ -1,6 +1,6 @@
 baseurl = "http://3dsim.github.io/"
 languageCode = "en-us"
-title = "3DSIM Engineering"
+title = "3DSIM Software Engineering"
 paginate = 5
 disqusshortname = "3dsimengineeringblog"
 copyright = "All rights reserved - 2016"
