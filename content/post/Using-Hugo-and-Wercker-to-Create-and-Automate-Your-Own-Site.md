@@ -2,7 +2,7 @@
 author = "ryanwalls"
 comments = true
 date = "2016-05-28T15:51:23-06:00"
-draft = true
+draft = false
 title = "Using Hugo and Wercker to Create and Automate Your Own Site"
 +++
 

@@ -1,6 +1,6 @@
 +++
 date = "2016-05-24T07:10:35-06:00"
-draft = true
+draft = false
 title = "Hello World"
 author = "ryanwalls"
 +++
